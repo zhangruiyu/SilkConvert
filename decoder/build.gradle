@@ -1,7 +1,8 @@
 plugins {
     id 'com.android.library'
 }
-
+// 版本号
+version = '1.0.0'
 android {
 
     compileSdkVersion 30
