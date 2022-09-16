@@ -2,8 +2,6 @@ plugins {
     id 'com.android.library'
     id 'maven-publish'
 }
-// Because the components are created only during the afterEvaluate phase, you must
-// configure your publications using the afterEvaluate() lifecycle method.
 afterEvaluate {
     publishing {
         publications {
@@ -15,7 +13,7 @@ afterEvaluate {
                 // You can then customize attributes of the publication as shown below.
                 groupId = 'com.mhz.silkconvert'
                 artifactId = 'final'
-                version = '1.0'
+                version = '1.0.0'
             }
             // Creates a Maven publication called “debug”.
             debug(MavenPublication) {
@@ -24,10 +22,11 @@ afterEvaluate {
 
                 groupId = 'com.mhz.silkconvert'
                 artifactId = 'final-debug'
-                version = '1.0'
+                version = '1.0.0'
             }
         }
     }
+}
 
 android {
 
